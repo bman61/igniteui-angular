@@ -1,8 +1,8 @@
 |title|igCombo|title|
 
 |styles|
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.validator.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.combo.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.validator.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.combo.css" rel="stylesheet" />
 |styles|
 
 |content|
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-4">
             <p class="lead">This sample demonstrates how to use AngularJS directives to create igCombos.</p>
-            <p><a href="https://github.com/IgniteUI/igniteui-angular/blob/master/samples/igCombo.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
+            <p><a href="https://github.com/IgniteUI/igniteui-angularjs/blob/master/samples/igCombo.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
         </div>
     </div>
 
@@ -28,7 +28,7 @@
 	        <input id="product-id" class="form-control" type="text" ng-model="combo.value1"/>
             <div class="text-sm text-muted text-right">values: 1 - 20</div>
         </div>
-        <div class="col-sm-3 col-md-2">
+        <div class="col-sm-3">
 
             <ig-combo id="combo1"
                       data-source="northwind"
@@ -36,11 +36,12 @@
                       value-key="ProductID"
                       text-key-type="string"
                       text-key="ProductName"
+                      width="100%"
                       ng-model="combo.value1">
             </ig-combo>
 
         </div>
-        <div class="col-sm-3 col-md-2">
+        <div class="col-sm-3">
 
             <ig-combo id="combo2"
                       data-source="northwind"
@@ -48,6 +49,7 @@
                       value-key="ProductID"
                       text-key-type="string"
                       text-key="ProductName"
+                      width="100%"
                       ng-model="combo.value1">
             </ig-combo>
 
@@ -67,12 +69,16 @@
 |content|
 
 |scripts|
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.combo.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.validator.js"></script>
-<script src="../src/igniteui-angular.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquery.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquerydeferred.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.combo.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.validator.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+<script src="../src/igniteui-angularjs.js"></script>
 <script src="js/igniteui-sample.js"></script>
 <script src="js/data/northwind.js"></script>
 |scripts|

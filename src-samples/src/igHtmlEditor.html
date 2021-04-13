@@ -1,16 +1,16 @@
 |title|HTML Editor|title|
 
 |styles|
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.popover.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.shared.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.toolbarbutton.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.splitbutton.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.colorpicker.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.validator.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.combo.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.editors.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.toolbar.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.htmleditor.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.popover.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.shared.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.toolbarbutton.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.splitbutton.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.colorpicker.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.validator.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.combo.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.editors.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.toolbar.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.htmleditor.css" rel="stylesheet" />
 <style type="text/css">
 	textarea {
 		width: 100%;
@@ -21,7 +21,7 @@
 
 |content|
 <div ng-app="igniteui-sample" ng-controller="htmlEditorController">
-	<h1 class="push-down-md"><a href="http://igniteui.com/html-editor/overview" target="_blank">igHtmlEditor</a></h1> 
+	<h1 class="push-down-md"><a href="http://igniteui.com/html-editor/overview" target="_blank">igHtmlEditor</a></h1>
     <div class="row description">
         <div class="alert alert-info col-md-5 try-it-out">
             <span class="h4">TRY IT OUT:</span>
@@ -32,7 +32,7 @@
         </div>
         <div class="col-md-4">
             <p class="lead">This sample demonstrates how AngularJS directives are used with the igHtmlEditor to allow for one-way binding.</p>
-            <p><a href="https://github.com/IgniteUI/igniteui-angular/blob/master/samples/igHtmlEditor.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
+            <p><a href="https://github.com/IgniteUI/igniteui-angularjs/blob/master/samples/igHtmlEditor.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
         </div>
     </div>
     <div class="row">
@@ -47,19 +47,21 @@
 |content|
 
 |scripts|
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.editors.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.popover.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.combo.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.splitbutton.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.colorpicker.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.colorpickersplitbutton.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.toolbarbutton.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.toolbar.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.htmleditor.js"></script>
-<script src="../src/igniteui-angular.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquery.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquerydeferred.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.editors.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.popover.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.combo.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.splitbutton.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.colorpicker.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.colorpickersplitbutton.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.toolbarbutton.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.toolbar.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.htmleditor.js"></script>
+<script src="../src/igniteui-angularjs.js"></script>
 <script src="js/igniteui-sample.js"></script>
 |scripts|

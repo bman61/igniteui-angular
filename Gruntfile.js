@@ -8,14 +8,14 @@ module.exports = function (grunt) {
 				report: "min"
 			},
 			build: {
-				src: [ "src/igniteui-angular.js" ],
+				src: [ "src/igniteui-angularjs.js" ],
 				dest: "dist/<%= pkg.name %>.min.js"
 			}
 		},
 
 		watch: {
 			scripts: {
-				files: ["src/igniteui-angular.js"],
+				files: ["src/igniteui-angularjs.js"],
 				tasks: ["jshint"],
 				options: {
 					spawn: false
@@ -24,10 +24,20 @@ module.exports = function (grunt) {
 		},
 
 		jshint: {
-			all: ["Gruntfile.js", "src/igniteui-angular.js"],
+			all: ["Gruntfile.js", "src/igniteui-angularjs.js"],
 			options: {
 				jshintrc: ".jshintrc",
 				reporter: require("jshint-stylish")
+			}
+		},
+		
+		exec: {
+			update_src_npm: {
+				cmd: 'cp src/igniteui-angularjs.js dist/npm/'
+			},
+			
+			update_min_npm: {
+				cmd: 'cp dist/igniteui-angularjs.min.js dist/npm/'
 			}
 		}
 	});
@@ -40,8 +50,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks('grunt-exec');
 
-	grunt.registerTask("build", ["uglify"]);
+	grunt.registerTask("build", ["uglify", "exec:update_src_npm", "exec:update_min_npm"]);
 
 	grunt.registerTask("default", ["jshint"]);
 

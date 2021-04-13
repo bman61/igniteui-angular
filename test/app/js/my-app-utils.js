@@ -1,5 +1,5 @@
 function testEventListener(widget, elementId, event) {
-	return $("#" + elementId).data(widget).options[event] != undefined;
+	return $("#" + elementId).data(widget).options[event] !== undefined;
 }
 
 function typeInInput(characters, element, callback) {
@@ -8,7 +8,7 @@ function typeInInput(characters, element, callback) {
        keyUp = jQuery.Event("keyup"),
        value = "";
 
-    characters.split('').forEach(function (ch) {
+    characters.split("").forEach(function (ch) {
         keyDown.keyCode = keyUp.keyCode = keyPress.keyCode = ch.charCodeAt(0);
         keyDown.charCode = keyUp.charCode = keyPress.charCode = ch.charCodeAt(0);
         element.trigger(keyDown);

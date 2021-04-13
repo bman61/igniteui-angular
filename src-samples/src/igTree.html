@@ -1,7 +1,7 @@
 |title|igTree|title|
 
 |styles|
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.tree.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.tree.css" rel="stylesheet" />
 |styles|
 
 |content|
@@ -18,7 +18,7 @@
         </div>
         <div class="col-md-4">
             <p class="lead">This sample demonstrates how to create an igTree with an AngularJS directive.</p>
-            <p><a href="https://github.com/IgniteUI/igniteui-angular/blob/master/samples/igTree.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
+            <p><a href="https://github.com/IgniteUI/igniteui-angularjs/blob/master/samples/igTree.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
         </div>
     </div>
 
@@ -59,7 +59,7 @@
                 <div class="col-sm-4">Remove the selected node from the tree</div>
                 <div class="col-md-3"><input type="button" class="btn btn-default btn-info" ng-click="removeSelectedNode()" value="Delete" /></div>
             </div>
-            
+
 
             <table id="treesampletable" class="table table-striped push-down-xs">
                 <tbody>
@@ -71,17 +71,17 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="input-group">
-                                        <input class="form-control" 
-                                               type="text" 
+                                        <input class="form-control"
+                                               type="text"
                                                placeholder="product name"
                                                ng-model="newProductSubcategory.Name">
                                         <span class="input-group-addon text-muted">{{newProductSubcategory.ProductSubcategoryID = pc.ProductSubcategories.length + 1}}</span>
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
-                                    <input class="btn btn-default btn-info btn-sm" 
-                                           type="button" 
-                                           value="Add" 
+                                    <input class="btn btn-default btn-info btn-sm"
+                                           type="button"
+                                           value="Add"
                                            ng-click="addProductSubcategory($index)" />
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                         <input class="form-control" type="text" ng-model="ps.Name">
                                     </div>
                                     <div class="col-sm-1">
-                                        <input 
+                                        <input
                                                class="btn btn-default btn-info btn-sm"
                                                type="button"
                                                value="Delete"
@@ -113,12 +113,14 @@
 |content|
 
 |scripts|
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.tree.js"></script>
-<script src="../src/igniteui-angular.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquery.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquerydeferred.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.tree.js"></script>
+<script src="../src/igniteui-angularjs.js"></script>
 <script src="js/igniteui-sample.js"></script>
 <script src="js/data/product-categories.js"></script>
 |scripts|

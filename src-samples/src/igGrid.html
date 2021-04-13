@@ -1,14 +1,14 @@
 |title|igGrid: The Basics|title|
 
 |styles|
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.grid.css" rel="stylesheet" />
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.editors.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.grid.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.editors.css" rel="stylesheet" />
 |styles|
 
 |content|
 <div ng-app="igniteui-sample" ng-controller="gridController">
 	<h1 class="push-down-md"><a href="http://igniteui.com/grid/overview" target="_blank">igGrid</a></h1>
-    
+
     <div class="row description">
         <div class="alert alert-info col-md-5 try-it-out">
             <span class="h4">TRY IT OUT:</span>
@@ -21,19 +21,19 @@
         </div>
         <div class="col-md-4">
             <p class="lead">This sample demonstrates how AngularJS directives are used with the igGrid to allow for two-way binding in the grid.</p>
-            <p><a href="https://github.com/IgniteUI/igniteui-angular/blob/master/samples/igGrid.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
+            <p><a href="https://github.com/IgniteUI/igniteui-angularjs/blob/master/samples/igGrid.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a></p>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-md-8">
 
-            <ig-grid id="grid1" 
-                     data-source="northwind" 
-                     width="100%" 
-                     height="400px" 
-                     primary-key="ProductID" 
-                     auto-commit="true" 
+            <ig-grid id="grid1"
+                     data-source="northwind"
+                     width="100%"
+                     height="400px"
+                     primary-key="ProductID"
+                     auto-commit="true"
                      auto-generate-columns="false">
                 <columns>
                     <column key="ProductID" header-text="Product ID" width="50px" data-type="number"></column>
@@ -56,7 +56,7 @@
                     </feature>
                 </features>
             </ig-grid>
-            
+
         </div>
         <div class="col-md-4">
             <h3>Add Product</h3>
@@ -66,10 +66,10 @@
                 <input type="number" ng-model="newProduct.UnitPrice" class="form-control" placeholder="unit price">
                 <input type="button" value="Add" ng-click="addProduct()" class="btn btn-default"/>
             </div>
-            
+
         </div>
     </div>
-    
+
 
     <hr/>
 	<table id="simpletable" class="table table-striped table-hover">
@@ -95,7 +95,7 @@
     <script id="colTmpl" type="text/template" ng-non-bindable>
         {{if ${UnitPrice} == null }}
             N/A
-        {{elseif ${UnitPrice} >= (Math.random()+0.5)*${UnitPrice} }} 
+        {{elseif ${UnitPrice} >= (Math.random()+0.5)*${UnitPrice} }}
             $ ${UnitPrice}  <img width='10' height='15' src= 'images/arrowUp.gif' />
         {{else}}
             $ ${UnitPrice}  <img width='10' height='15' src= 'images/arrowDown.gif' />
@@ -105,19 +105,22 @@
 |content|
 
 |scripts|
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.framework.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.editors.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.updating.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.sorting.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.paging.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.popover.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.featurechooser.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.filtering.js"></script>
-<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
-<script src="../src/igniteui-angular.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquery.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquerydeferred.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.framework.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.shared.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.editors.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.updating.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.sorting.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.paging.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.popover.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.featurechooser.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.grid.filtering.js"></script>
+<script src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+<script src="../src/igniteui-angularjs.js"></script>
 <script src="js/igniteui-sample.js"></script>
 <script src="js/data/northwind.js"></script>
 |scripts|

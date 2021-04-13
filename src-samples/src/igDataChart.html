@@ -1,12 +1,14 @@
 |title|Ignite UI Chart and Zoombar|title|
 
 |styles|
-<link type="text/css" href="//cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.zoombar.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.html5.css"/>
+<link rel="stylesheet" type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.chart.css"/>
+<link rel="stylesheet" type="text/css" href="http://cdn-na.infragistics.com/igniteui/latest/css/structure/modules/infragistics.ui.zoombar.css"/>
 |styles|
 
 |content|
 <div ng-app="igniteui-sample" ng-controller="dataChartController">
-	<h1 class="push-down-md"><a href="http://igniteui.com/data-chart/overview" target="_blank">igChart</a> &amp; <a href="http://igniteui.com/zoombar/overview" target="_blank">igZoombar</a></h1> 
+	<h1 class="push-down-md"><a href="http://igniteui.com/data-chart/overview" target="_blank">igChart</a> &amp; <a href="http://igniteui.com/zoombar/overview" target="_blank">igZoombar</a></h1>
     <div class="row description">
         <div class="alert alert-info col-md-5 try-it-out">
             <span class="h4">TRY IT OUT:</span>
@@ -18,7 +20,7 @@
         </div>
         <div class="col-md-4">
             <p class="lead">This sample demonstrates how to link together the igDataChart and igZoomBar using AngularJS directives.</p>
-            <p><a href="https://github.com/IgniteUI/igniteui-angular/blob/master/samples/igDataChart.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a>
+            <p><a href="https://github.com/IgniteUI/igniteui-angularjs/blob/master/samples/igDataChart.html" class="btn btn-default btn-lg btn-primary" target="_blank"><i class="fa fa-code fa-lg"></i> Explore the Code</a>
             </p>
         </div>
     </div>
@@ -49,29 +51,42 @@
                     </series>
                 </series>
             </ig-data-chart>
-            <ig-zoombar target="#datachart1"></ig-zoombar>
+            <ig-zoombar id="zoombar1" target="#datachart1"></ig-zoombar>
         </div>
     </div>
 </div>
 |content|
 
 |scripts|
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dv.core.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_piechart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_categorychart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_financialchart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_polarchart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_radialchart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_rangecategorychart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.chart_scatterchart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dvcommonwidget.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.geographicmap_core.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.chart.js"></script>
-	<script src="//cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.zoombar.js"></script>
-	<script src="../src/igniteui-angular.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.js"></script>
+    <script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquery.js"></script>
+    <script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.util.jquerydeferred.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datasource.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.templating.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.shared.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_core.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_collections.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ext_ui.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dv_core.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dv_geometry.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_core.js"></script>
+    <script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dv_jquerydom.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.dvcommonwidget.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.chart.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_categorycore.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_category.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_rangecategory.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_verticalcategory.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_financial.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_extendedfinancial.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_extendedaxes.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_polar.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_radial.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_scatter.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_stacked.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.datachart_annotation.js"></script>
+	<script type="text/javascript" src="http://cdn-na.infragistics.com/igniteui/latest/js/modules/infragistics.ui.zoombar.js"></script>
+	<script src="../src/igniteui-angularjs.js"></script>
 	<script src="js/igniteui-sample.js"></script>
 	<script src="js/data/population.js"></script>
 |scripts|
